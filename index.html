@@ -28,10 +28,28 @@
         <h1 class="main-header">Добро пожаловать на HotCookies!</h1> 
         <!-- Секция 1 с якорем --> 
         <section id="services"> 
-            <h2>Наши услуги</h2> 
-            <p>Описание предоставляемых услуг...</p> 
-            <!-- Кнопка открытия модалки -->
-            <button id="openDialog" type="button">Написать нам</button>
+            <h2 class="main-services">Наши услуги</h2>
+            <div class="services__container"> <!-- Контейнер для скролла -->
+                <div class="service-card"> <!-- Карточка 1 -->
+                <img src="https://cdn.vectorstock.com/i/500p/09/70/fast-shipping-icon-vector-24390970.jpg" alt="Услуга 1" class="service-card__image">
+                <h3 class="service-card__title">Быстрая доставка</h3>
+                <p class="service-card__description">Заказ за пару кликов и доставка от 2 минут!</p>
+                </div>
+                <div class="service-card"> <!-- Карточка 2 -->
+                <img src="https://fguz-sm.ru/edimg/File/KC/2022/b.pit__1_.jpg" alt="Услуга 2" class="service-card__image">
+                <h3 class="service-card__title">Бронирование столиков</h3>
+                <p class="service-card__description">Забронируйте столик для себя и своих близких!</p>
+                </div>
+                <div class="service-card"> <!-- Карточка 3 -->
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68768d39bad2012674ce79d2_68768e9ab4ba8034be3cc782/scale_1200" alt="Услуга 3" class="service-card__image">
+                <h3 class="service-card__title">Индивидуальный заказ</h3>
+                <p class="service-card__description">Всегда только вкусные и свежие блюда!</p>
+                </div>
+            </div>
+            <div class="open-button">
+                  <!-- Кнопка открытия модалки -->
+                <button id="openDialog" type="button">Написать нам</button>
+            </div>
             <!-- Модалка с формой -->
              <div class="modalWrapper" id="modalWrapper">
                 <dialog id="contactDialog" aria-labelledby="dialogTitle">
@@ -76,7 +94,7 @@
         </section> 
         <!-- Секция 2 с якорем --> 
         <section id="portfolio"> 
-            <h2>Портфолио</h2> 
+            <h2 class="main-info">Портфолио</h2> 
             <p>Примеры наших работ...</p> 
         </section> 
         <!-- Секция 3 с якорем --> 
