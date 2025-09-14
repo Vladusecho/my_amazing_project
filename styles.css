@@ -1,4 +1,7 @@
 dialog { 
+	position: relative; 
+	background: white; 
+	padding: 2rem;
  	border: none; 
 	border-radius: 12px;
 }
@@ -78,9 +81,21 @@ body {
 	line-height: 1.5; 
 }
 
+.header {
+	margin-top: 18px;
+}
+
+.site-nav {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+
 .site-nav__list { 
-	display: flex; 
-	list-style: none; 
+	display: flex;    
+	align-items: center;    
+	gap: 2rem;              
+	padding: 1rem;
 }
 
 .site-nav__item { 
