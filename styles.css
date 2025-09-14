@@ -1,14 +1,8 @@
-body {
-	background-color: aquamarine;
-}
-
 dialog { 
-	/* padding: 20px 50px 20px 50px; */
  	border: none; 
 	border-radius: 12px;
 }
 dialog::backdrop { 
-	
 	background: rgba(0,0,0,.5); 
 }
 .form-actions { 
@@ -21,19 +15,7 @@ dialog::backdrop {
 	display: none;
 }
 
-/* БАЗА: читаемость и предсказуемость размеров */
-* { box-sizing: border-box; }
-html, body {
-	margin: 0; 
-	padding: 0; 
-	display: flex;
-	flex-direction: column;
-	align-items: center;	
-}
-body { 
-	font-family: system-ui, 
-	-apple-system, "Segoe UI", Roboto, Arial, sans-serif; 
-	line-height: 1.5; }
+
 /* Формы: размеры, отступы, визуальный порядок */
 label { 
 	display: block; 
@@ -49,10 +31,10 @@ input, select, textarea, button {
 }
 /* Кнопка по умолчанию */
 button, [type="submit"] {
- background: #0a84ff;
- color: #fff;
- border: none;
- cursor: pointer;
+	background: #0a84ff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
 }
 /* Состояния: клавиатура/мышь/ошибки */
 :where(input, select, textarea, button):focus-visible {
@@ -65,3 +47,61 @@ button:hover {
 :disabled, [aria-disabled="true"] { opacity: .6; cursor: not-allowed; }
 /* Подсветка ошибочных полей (установите aria-invalid="true") */
 [aria-invalid="true"] { border-color: #b00020; }
+
+/* TOKENS */
+:root {
+	--color-primary: #2e2e2e;
+	--color-bg: aquamarine;
+	--font-main: 'Roboto', sans-serif;
+}
+
+/* RESET-MINIMUM */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE TAPOGRAPHY */
+html, body {
+	background-color: var(--color-bg);
+	font-family: var(--font-main);
+	margin: 0; 
+	padding: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-behavior: smooth;	
+}
+
+body { 
+	line-height: 1.5; 
+}
+
+.site-nav__list { 
+	display: flex; 
+	list-style: none; 
+}
+
+.site-nav__item { 
+	margin-right: 10px; 
+}
+
+.site-nav__link { 
+	padding: 0.5rem 1rem; 
+
+}
+/* Состояния при наведении и фокусе */
+.site-nav__link:hover { 
+	background-color: #eee; 
+}
+
+.site-nav__link:focus-visible { 
+	outline: 2px solid #007bff; 
+	outline-offset: 2px; 
+}
+/* Подсветка активного пункта */
+.site-nav__link--active { 
+	color: white; 
+	background-color: #007bff; 
+}
