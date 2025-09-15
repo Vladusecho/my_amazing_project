@@ -66,6 +66,7 @@ html, body {
 }
 
 body { 
+	max-width: 800px;
 	line-height: 1.5; 
 	padding-bottom: 50px;
 	padding-top: 80px;
@@ -227,4 +228,12 @@ dialog::backdrop {
 
 .link-contacts {
 	margin-top: 22px;
+}
+
+.nav-header {
+	margin-top: 32px;
+}
+
+.team-header {
+	margin-top: 32px;
 }
