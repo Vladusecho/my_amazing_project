@@ -11,26 +11,53 @@
 </head> 
 <body> 
     <!-- Шапка сайта --> 
-    <header> 
-        <a href="/">Логотип или название сайта</a> 
+    <header class="header"> 
         <!-- Главное меню навигации --> 
-        <nav> 
-            <ul> 
-                <li><a href="index.html">Главная</a></li> 
-                <li><a href="about.html">О нас</a></li> 
-                <li><a href="contacts.html">Контакты</a></li> 
+        <nav class="site-nav" aria-label="Основная навигация"> 
+            <a class="site-header__brand" href="/"> <img alt="cookie" src="https://i.pinimg.com/originals/21/51/b8/2151b8dbdd5aba485f09dd5b74d679c9.png" width="42" height="42"/> </a> 
+
+            <ul class="site-nav__list"> 
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li> 
+                <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li> 
+                <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li> 
             </ul> 
         </nav> 
     </header> 
     <!-- Уникальное основное содержимое страницы --> 
     <main>
-        <h1>Добро пожаловать на наш сайт!</h1> 
+        <h1 class="main-header">Добро пожаловать на HotCookies!</h1> 
         <!-- Секция 1 с якорем --> 
+         <h2 class="nav-header">Быстрая навигация по данной странице</h2>
+         <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#services" class="nav__link">Сервисы</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
         <section id="services"> 
-            <h2>Наши услуги</h2> 
-            <p>Описание предоставляемых услуг...</p> 
-            <!-- Кнопка открытия модалки -->
-            <button id="openDialog" type="button">Написать нам</button>
+            <h2 class="main-services">Наши услуги</h2>
+            <div class="services__container"> <!-- Контейнер для скролла -->
+                <div class="service-card"> <!-- Карточка 1 -->
+                <img src="https://cdn.vectorstock.com/i/500p/09/70/fast-shipping-icon-vector-24390970.jpg" alt="Услуга 1" class="service-card__image">
+                <h3 class="service-card__title">Быстрая доставка</h3>
+                <p class="service-card__description">Заказ за пару кликов и доставка от 2 минут!</p>
+                </div>
+                <div class="service-card"> <!-- Карточка 2 -->
+                <img src="https://fguz-sm.ru/edimg/File/KC/2022/b.pit__1_.jpg" alt="Услуга 2" class="service-card__image">
+                <h3 class="service-card__title">Бронирование столиков</h3>
+                <p class="service-card__description">Забронируйте столик для себя и своих близких!</p>
+                </div>
+                <div class="service-card"> <!-- Карточка 3 -->
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68768d39bad2012674ce79d2_68768e9ab4ba8034be3cc782/scale_1200" alt="Услуга 3" class="service-card__image">
+                <h3 class="service-card__title">Индивидуальный заказ</h3>
+                <p class="service-card__description">Всегда только вкусные и свежие блюда!</p>
+                </div>
+            </div>
+            <div class="open-button">
+                  <!-- Кнопка открытия модалки -->
+                <button id="openDialog" type="button">Написать нам</button>
+            </div>
             <!-- Модалка с формой -->
              <div class="modalWrapper" id="modalWrapper">
                 <dialog id="contactDialog" aria-labelledby="dialogTitle">
@@ -75,19 +102,30 @@
         </section> 
         <!-- Секция 2 с якорем --> 
         <section id="portfolio"> 
-            <h2>Портфолио</h2> 
-            <p>Примеры наших работ...</p> 
+            <h2 class="main-info">Портфолио</h2> 
+            <div class="services__container"> <!-- Контейнер для скролла -->
+                <div class="service-card"> <!-- Карточка 1 -->
+                <img src="img/first.jpg" alt="Услуга 1" class="service-card__image">
+                </div>
+                <div class="service-card"> <!-- Карточка 2 -->
+                <img src="img/second.jpg" alt="Услуга 2" class="service-card__image">
+                </div>
+                <div class="service-card"> <!-- Карточка 3 -->
+                <img src="img/third.jpg" alt="Услуга 3" class="service-card__image">
+                </div>
+            </div>
         </section> 
         <!-- Секция 3 с якорем --> 
         <section id="contacts"> 
-            <h2>Контактная информация</h2> 
-            <p>Наши контакты...</p> 
+            <h2><a class="main-contacts" href="contacts.html">Контактная информация</a> </h2>
+            <p>Адрес: Москва, ул. Пироговая, 13</p>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Часы работы: Пн-Чт 09:00-23:00, Пт-Сб 09:00-01:00, Вс 10:00-22:00</p>
     </main> 
-            <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу --> 
         </section> 
     <!-- Подвал сайта --> 
     <footer> 
-        <p>&copy; 2025 Название вашего сайта. Все права защищены.</p> 
+        <p>&copy; 2025 HotCookies. Все права защищены.</p> 
         <p>Телефон: +7 (960) 552-22-20</p> 
     </footer> 
 </body> 
