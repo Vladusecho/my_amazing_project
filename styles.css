@@ -65,7 +65,6 @@ html, body {
 	scroll-behavior: smooth;	
 }
 
-
 body { 
 	width: 1100px;
 	max-width: 1100px;
@@ -86,6 +85,7 @@ footer {
 	background-color: #a9a4a4;  
 	padding: 7px 0 7px 0;
 }
+
 
 .header {
 	display: flex;
@@ -151,9 +151,20 @@ dialog::backdrop {
   	backdrop-filter: blur(2px);
 }
 
+.media {
+	margin-top: 32px;
+	aspect-ratio: 16 / 9;
+  	width: 100%;
+}
+.media iframe,
+.media video {
+	width: 100%;
+  	height: 100%;
+}
+
 .services {
   	padding: 2rem 1rem;
-	max-width: 800px; 
+	max-width: 400px; 
     margin: 0 auto;
 }
 
@@ -164,7 +175,7 @@ dialog::backdrop {
 	padding-bottom: 1rem;           
 	scroll-behavior: smooth;
 	width: 100%; 
-    max-width: 1000px;
+    max-width: 800px;
 }
 
 .service-card {
@@ -210,6 +221,7 @@ dialog::backdrop {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 32px;
+	margin-top: 32px;
 }
 
 .main-info {
@@ -244,8 +256,92 @@ dialog::backdrop {
 	margin-top: 32px;
 }
 
+.main-map {
+	margin-top: 32px;
+}
+
+.faq {
+	margin-top: 32px;
+}
+
 section:target {
   background-color: #77f1c9;
   padding: 1rem;
   border-left: 4px solid #ffcc00;
+}
+
+#contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.accordion__item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion__item:hover {
+  border-color: #ccc;
+}
+
+.accordion__item[open] {
+  border-color: #ff6b35;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.accordion__question {
+  padding: 1.2rem 1.5rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  list-style: none; 
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  position: relative;
+}
+
+
+.accordion__question::after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #ff6b35;
+  transition: transform 0.3s ease;
+}
+
+
+.accordion__answer {
+  padding: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion__item[open] .accordion__answer {
+  max-height: 500px; 
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.accordion__answer p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.accordion__answer a {
+  color: #ff6b35;
+  text-decoration: underline;
 }
