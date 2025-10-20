@@ -1,14 +1,3 @@
-.form-actions { 
-	display:flex; 
-	justify-content: space-between;
-	gap:.5rem; 
-	margin-top:1rem;
-}
-.modalWrapper {
-	display: none;
-}
-
-
 /* Формы: размеры, отступы, визуальный порядок */
 label { 
 	display: block; 
@@ -133,6 +122,17 @@ footer {
 	color: white; 
 	background-color: #007bff; 
 }
+
+.form-actions { 
+	display:flex; 
+	justify-content: space-between;
+	gap:.5rem; 
+	margin-top:1rem;
+}
+.modalWrapper {
+	display: none;
+}
+
 
 dialog { 
 	border: none !important;
