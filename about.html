@@ -1,71 +1,233 @@
- <!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>О нас - Название вашего сайта</title> 
-    <meta name="description" content="Узнайте больше о нашей компании и истории"> 
-	<link rel="icon" href="assets/favicon.ico" type="image/x-icon"> 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - HotCookies</title>
+    <meta name="description" content="Узнайте больше о нашей компании и истории">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="styles.css">
-</head> 
-<body> 
-    <!-- Шапка сайта --> 
-     <header class="header"> 
-        <!-- Главное меню навигации --> 
-        <nav class="site-nav" aria-label="Основная навигация"> 
-            <a class="site-header__brand" href="/"> <img alt="cookie" src="https://i.pinimg.com/originals/21/51/b8/2151b8dbdd5aba485f09dd5b74d679c9.png" width="42" height="42"/> </a> 
-            <ul class="site-nav__list"> 
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li> 
-                <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li> 
-                <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li> 
-            </ul> 
-        </nav> 
-    </header> 
-    <main>
-        <!-- Простые "хлебные крошки" --> 
-        <nav aria-label="Хлебные крошки"> 
-            <a href="index.html">Главная</a> → 
-            <span>О нас</span> 
-        </nav> 
-        <h1>О нашей компании</h1> 
-        <section> 
-            <h2>Наша история: От домашней кухни до сердца города</h2> 
-            <p>Всё началось не на большой кухне ресторана, а в маленькой квартире на окраине Москвы. Основатель HotCookies, Владислав, всегда верил, что еда — это не просто топливо для тела, а язык души. Его знаменитое горячее печенье с секретным рецептом шоколадной начинки было главным хитом на всех дружеских посиделках и семейных праздниках.</p>
-            <hr>
-<p>Друзья постоянно говорили: «Влад, это невероятно! Ты должен продавать это!». Но он отмахивался, пока один из таких вечеров не изменил всё. Его друг привёл своего коллегу из Франции, большого ценителя десертов. Попробовав одно печенье, он замолчал на минуту, а потом сказал: «Mon Dieu! Это же тёплое, тающее объятие из шоколада! У вас должен быть свой ресторан».</p>
-<hr>
-<p>Этой фразы оказалось достаточно. Зародилась мечта, которая казалась безумной: создать место, где каждый сможет ощутить это самое «тёплое объятие», место, пахнущее ванилью и детством.</p>
-<hr>
-<p>Сначала был домашний цех на заказ, потом — первый фудтрак у метро, где люди выстраивались в очередь, не обращая внимания на дождь или снег. Мы видели их счастливые глаза и понимали, что создаём не просто десерт, а мгновение радости.</p>
-<hr>
-<p>И вот, спустя три года, мы открыли двери нашего первого уютного уголка — HotCookies. Мы выросли, но наша философия осталась прежней: щепотка любви в каждом рецепте, только свежайшие ингредиенты и то самое домашнее тепло, с которого всё началось.</p>
-<hr>
-<p>Добро пожаловать в нашу большую семью. Приходите согреться.
-</p> 
-        </section> 
-        <section> 
-            <h2 class="team-header">Наша команда: Команда мечты, которая варит кофе и замешивает магию</h2> 
-            <p><b><u>Владислав, основатель и главный кондитер</u></b>
-- Душа проекта. Тот самый человек, с чьей домашней кухни всё началось. Он лично разрабатывает все рецепты и следит за тем, чтобы каждое печенье, покидающее нашу кухню, было идеальным. Его девиз: «Если бы я не подал это своим друзьям, это не попадёт и нашим гостям».</p>
-<hr>
-<p><b><u>Марк, шеф-бариста и мастер настроения</u></b>
-Человек, который превращает утро наших гостей в самый лучший день. Марк не просто готовит кофе, он создаёт ритуалы. Он помнит, какую выпечку вы любите с латте, а какую — с капучино. Именно он придумал наш фирменный «Пряный раф», который стал визитной карточкой.</p>
-<hr>
-<p><b><u>София, менеджер и солнце за стойкой</u></b>
-Тот человек, который встречает вас улыбкой и знает по имени половину наших постоянных гостей. София заряжает энергией всю команду и следит за тем, чтобы в HotCookies царила по-настоящему домашняя атмосфера. Решает любые вопросы так легко, что кажется, у неё есть волшебная палочка.</p>
-<hr>
-<p><b><u>Давид и Алёна, пекари-виртуозы</u></b>
-Наша динамичная duo на кухне. Их слаженная работа — это как танец: идеально рассчитанный, быстрый и красивый. Они точно знают, до какой степени хрустящей должна быть корочка и как долго должна томиться шоколадная сердцевина, чтобы она получилась именно такой, как нужно.</p>
-<hr>
-<p><b><u>Наша философия:</u></b>
-Мы не просто сотрудники, мы — семья. Мы верим, что искренняя забота и любовь к своему делу чувствуются в каждой крошке нашего печенья и в каждой чашке кофе. Мы рады делиться с вами не просто угощением, а частичкой нашего тепла и хорошего настроения.</p>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="https://i.pinimg.com/originals/21/51/b8/2151b8dbdd5aba485f09dd5b74d679c9.png" alt="Cookie" width="42" height="42" class="d-inline-block align-text-top">
+                    HotCookies
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<p>Приходите не только за вкусом, но и за ощущением, что вас здесь ждали.</p> 
-        </section> 
-    </main> 
-    <footer> 
-        <p>&copy; 2025 HotCookies. Все права защищены.</p> 
-        <p>Телефон: +7 (960) 552-22-20</p> 
-    </footer> 
-</body> 
+    <main class="container my-5">
+        <!-- Хлебные крошки -->
+        <nav aria-label="Хлебные крошки" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">О нас</li>
+            </ol>
+        </nav>
+
+        <!-- Заголовок страницы -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 mb-3">О нашей компании</h1>
+                <p class="lead">Узнайте больше о нашей истории, команде и философии</p>
+            </div>
+        </div>
+
+        <!-- Секция истории -->
+        <section class="mb-5">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Наша история: От домашней кухни до сердца города</h2>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="История HotCookies" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-content p-4 bg-light rounded">
+                                <p>Всё началось не на большой кухне ресторана, а в маленькой квартире на окраине Москвы. Основатель HotCookies, Владислав, всегда верил, что еда — это не просто топливо для тела, а язык души. Его знаменитое горячее печенье с секретным рецептом шоколадной начинки было главным хитом на всех дружеских посиделках и семейных праздниках.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-content p-4 bg-light rounded">
+                                <p>Друзья постоянно говорили: «Влад, это невероятно! Ты должен продавать это!». Но он отмахивался, пока один из таких вечеров не изменил всё. Его друг привёл своего коллегу из Франции, большого ценителя десертов. Попробовав одно печенье, он замолчал на минуту, а потом сказал: «Mon Dieu! Это же тёплое, тающее объятие из шоколада! У вас должен быть свой ресторан».</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-content p-4 bg-light rounded">
+                                <p>Этой фразы оказалось достаточно. Зародилась мечта, которая казалась безумной: создать место, где каждый сможет ощутить это самое «тёплое объятие», место, пахнущее ванилью и детством.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-content p-4 bg-light rounded">
+                                <p>Сначала был домашний цех на заказ, потом — первый фудтрак у метро, где люди выстраивались в очередь, не обращая внимания на дождь или снег. Мы видели их счастливые глаза и понимали, что создаём не просто десерт, а мгновение радости.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-content p-4 bg-light rounded">
+                                <p>И вот, спустя три года, мы открыли двери нашего первого уютного уголка — HotCookies. Мы выросли, но наша философия осталась прежней: щепотка любви в каждом рецепте, только свежайшие ингредиенты и то самое домашнее тепло, с которого всё началось.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content p-4 bg-primary text-white rounded">
+                                <p class="mb-0">Добро пожаловать в нашу большую семью. Приходите согреться.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция команды -->
+        <section class="mb-5">
+            <h2 class="text-center mb-5">Наша команда: Команда мечты, которая варит кофе и замешивает магию</h2>
+            
+            <div class="row g-4">
+                <!-- Владислав -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="team-avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-person-fill" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title h5 mb-1">Владислав</h3>
+                                    <p class="card-subtitle text-muted">Основатель и главный кондитер</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Душа проекта. Тот самый человек, с чьей домашней кухни всё началось. Он лично разрабатывает все рецепты и следит за тем, чтобы каждое печенье, покидающее нашу кухню, было идеальным.</p>
+                            <p class="card-text fst-italic">«Если бы я не подал это своим друзьям, это не попадёт и нашим гостям».</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Марк -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="team-avatar bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-cup-hot-fill" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title h5 mb-1">Марк</h3>
+                                    <p class="card-subtitle text-muted">Шеф-бариста и мастер настроения</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Человек, который превращает утро наших гостей в самый лучший день. Марк не просто готовит кофе, он создаёт ритуалы. Он помнит, какую выпечку вы любите с латте, а какую — с капучино.</p>
+                            <p class="card-text">Именно он придумал наш фирменный «Пряный раф», который стал визитной карточкой.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- София -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="team-avatar bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-emoji-smile-fill" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title h5 mb-1">София</h3>
+                                    <p class="card-subtitle text-muted">Менеджер и солнце за стойкой</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Тот человек, который встречает вас улыбкой и знает по имени половину наших постоянных гостей. София заряжает энергией всю команду и следит за тем, чтобы в HotCookies царила по-настоящему домашняя атмосфера.</p>
+                            <p class="card-text">Решает любые вопросы так легко, что кажется, у неё есть волшебная палочка.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Давид и Алёна -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="team-avatar bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-people-fill" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title h5 mb-1">Давид и Алёна</h3>
+                                    <p class="card-subtitle text-muted">Пекари-виртуозы</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Наша динамичная duo на кухне. Их слаженная работа — это как танец: идеально рассчитанный, быстрый и красивый.</p>
+                            <p class="card-text">Они точно знают, до какой степени хрустящей должна быть корочка и как долго должна томиться шоколадная сердцевина, чтобы она получилась именно такой, как нужно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Философия -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0">Наша философия</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Мы не просто сотрудники, мы — семья. Мы верим, что искренняя забота и любовь к своему делу чувствуются в каждой крошке нашего печенья и в каждой чашке кофе. Мы рады делиться с вами не просто угощением, а частичкой нашего тепла и хорошего настроения.</p>
+                            <p class="card-text fw-bold">Приходите не только за вкусом, но и за ощущением, что вас здесь ждали.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 HotCookies. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Телефон: +7 (960) 552-22-20</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
