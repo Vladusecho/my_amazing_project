@@ -1,176 +1,331 @@
- <!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Главная - Название вашего сайта</title> 
-    <meta name="description" content="Краткое описание главной страницы вашего сайта"> 
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> 
-    <script src="main.js" defer></script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - HotCookies</title>
+    <meta name="description" content="Краткое описание главной страницы вашего сайта">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Ваши кастомные стили (если нужны) -->
     <link rel="stylesheet" href="styles.css">
-</head> 
-<body> 
-    <!-- Шапка сайта --> 
-    <header class="header"> 
-        <!-- Главное меню навигации --> 
-        <nav class="site-nav" aria-label="Основная навигация"> 
-            <a class="site-header__brand" href="/"> <img alt="cookie" src="https://i.pinimg.com/originals/21/51/b8/2151b8dbdd5aba485f09dd5b74d679c9.png" width="42" height="42"/> </a> 
-
-            <ul class="site-nav__list"> 
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li> 
-                <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li> 
-                <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li> 
-            </ul> 
-        </nav> 
-    </header> 
-    <!-- Уникальное основное содержимое страницы --> 
-    <main>
-        <h1 class="main-header">Добро пожаловать на HotCookies!</h1> 
-        <!-- Секция 1 с якорем --> 
-         <h2 class="nav-header">Быстрая навигация по данной странице</h2>
-         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#services" class="nav__link">Сервисы</a></li>
-                <li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
-                <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
-                <li class="nav__item"><a href="#faq" class="nav__link">Вопросы и ответы</a></li>
-            </ul>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="https://i.pinimg.com/originals/21/51/b8/2151b8dbdd5aba485f09dd5b74d679c9.png" alt="Cookie" width="42" height="42" class="d-inline-block align-text-top">
+                    HotCookies
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <section id="services"> 
-            <h2 class="main-services">Наши услуги</h2>
-            <div class="services__container"> <!-- Контейнер для скролла -->
-                <div class="service-card"> <!-- Карточка 1 -->
-                <img src="https://cdn.vectorstock.com/i/500p/09/70/fast-shipping-icon-vector-24390970.jpg" alt="Услуга 1" class="service-card__image">
-                <h3 class="service-card__title">Быстрая доставка</h3>
-                <p class="service-card__description">Заказ за пару кликов и доставка от 2 минут!</p>
-                </div>
-                <div class="service-card"> <!-- Карточка 2 -->
-                <img src="https://fguz-sm.ru/edimg/File/KC/2022/b.pit__1_.jpg" alt="Услуга 2" class="service-card__image">
-                <h3 class="service-card__title">Бронирование столиков</h3>
-                <p class="service-card__description">Забронируйте столик для себя и своих близких!</p>
-                </div>
-                <div class="service-card"> <!-- Карточка 3 -->
-                <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68768d39bad2012674ce79d2_68768e9ab4ba8034be3cc782/scale_1200" alt="Услуга 3" class="service-card__image">
-                <h3 class="service-card__title">Индивидуальный заказ</h3>
-                <p class="service-card__description">Всегда только вкусные и свежие блюда!</p>
-                </div>
+    </header>
+
+    <!-- Уникальное основное содержимое страницы -->
+    <main class="container my-5">
+        <!-- Заголовок страницы -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 mb-3">Добро пожаловать на HotCookies!</h1>
+                <p class="lead">Лучшее печенье в городе с доставкой на дом</p>
             </div>
-            <div class="open-button">
-                  <!-- Кнопка открытия модалки -->
-                <button id="openDialog" type="button">Написать нам</button>
+        </div>
+
+        <!-- Навигация по странице -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h4 mb-3">Быстрая навигация по странице</h2>
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="nav-link mb-2 mb-sm-0 me-sm-2" href="#services">Сервисы</a>
+                    <a class="nav-link mb-2 mb-sm-0 me-sm-2" href="#portfolio">Портфолио</a>
+                    <a class="nav-link mb-2 mb-sm-0 me-sm-2" href="#contacts">Контакты</a>
+                    <a class="nav-link mb-2 mb-sm-0" href="#faq">Вопросы и ответы</a>
+                </nav>
             </div>
-            <!-- Модалка с формой -->
-             <div class="modalWrapper" id="modalWrapper">
-                <dialog id="contactDialog" aria-labelledby="dialogTitle">
-                <h2 id="dialogTitle">Обратная связь</h2>
+        </div>
 
-                <form id="contactForm" method="dialog" novalidate>
-                    <label for="name">Имя</label>
-                    <input id="name" name="name" type="text" required minlength="2"
-                autocomplete="given-name">
-
-                    <label for="email">E-mail</label>
-                    <input id="email" name="email" type="email" required
-                autocomplete="email">
-
-                    <label for="phone">Телефон</label>
-                    <input id="phone" name="phone" type="tel" inputmode="tel"
-                autocomplete="tel" aria-describedby="phoneHelp" placeholder="+7 (___) ___-__-__"
-                required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
-
-                    <small id="phoneHelp">Формат: +7 (900) 000-00-00</small>
-
-                    <label for="date">Дата</label>
-                    <input id="date" name="date" type="date">
-
-                    <label for="topic">Тема</label>
-                    <select id="topic" name="topic" required>
-                        <option value="">Выберите тему</option>
-                        <option>Вопрос</option>
-                        <option>Заказ</option>
-                    </select>
-                    
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <div class="form-actions">
-                        <button type="button" id="closeDialog">Закрыть</button>
-                        <button type="submit">Отправить</button>
+        <!-- Секция услуг -->
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4">Наши услуги</h2>
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://cdn.vectorstock.com/i/500p/09/70/fast-shipping-icon-vector-24390970.jpg" class="card-img-top p-3" alt="Быстрая доставка">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Быстрая доставка</h3>
+                            <p class="card-text">Заказ за пару кликов и доставка от 2 минут!</p>
+                        </div>
                     </div>
-                </form>
-            </dialog>
-             </div>
-<!-- Якорная ссылка внутри страницы --> 
-        </section> 
-        <!-- Секция 2 с якорем --> 
-        <section id="portfolio"> 
-            <h2 class="main-info">Портфолио</h2> 
-            <div class="services__container"> <!-- Контейнер для скролла -->
-                <div class="service-card"> <!-- Карточка 1 -->
-                <img src="img/first.jpg" alt="Услуга 1" class="service-card__image">
                 </div>
-                <div class="service-card"> <!-- Карточка 2 -->
-                <img src="img/second.jpg" alt="Услуга 2" class="service-card__image">
+                <!-- Карточка 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://fguz-sm.ru/edimg/File/KC/2022/b.pit__1_.jpg" class="card-img-top p-3" alt="Бронирование столиков">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Бронирование столиков</h3>
+                            <p class="card-text">Забронируйте столик для себя и своих близких!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card"> <!-- Карточка 3 -->
-                <img src="img/third.jpg" alt="Услуга 3" class="service-card__image">
+                <!-- Карточка 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68768d39bad2012674ce79d2_68768e9ab4ba8034be3cc782/scale_1200" class="card-img-top p-3" alt="Индивидуальный заказ">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Индивидуальный заказ</h3>
+                            <p class="card-text">Всегда только вкусные и свежие блюда!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="media">
-               <iframe width="720" height="405" src="https://rutube.ru/play/embed/0415474bae606bcde479446d795711c8/" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            
+            <!-- Кнопка открытия модалки -->
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Написать нам
+                </button>
             </div>
-        </section> 
-        <!-- Секция 3 с якорем --> 
-        <section id="contacts"> 
-            <h2><a class="main-contacts" href="contacts.html">Контактная информация</a> </h2>
-            <p>Адрес: Москва, ул. Пироговая, 13</p>
-            <p>Телефон: +7 (495) 123-45-67</p>
-            <p>Часы работы: Пн-Чт 09:00-23:00, Пт-Сб 09:00-01:00, Вс 10:00-22:00</p>
-            <iframe class="main-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A59a32384e6e821b7746ddfafd929f27f34d8c51eaeb32bb729b3c45daa202f28&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
-            </section> 
-        <section id="faq" class="faq">
-  <h2 class="faq__title">Часто задаваемые вопросы</h2>
+        </section>
 
-  <div class="accordion">
-    <!-- Вопрос 1 -->
-    <details class="accordion__item">
-      <summary class="accordion__question">Какие у вас есть варианты печенья?</summary>
-      <div class="accordion__answer">
-        <p>Мы готовим более 20 видов печенья! От классического шоколадного чипса и овсяного с изюмом до экзотического с клюквой и белым шоколадом, а также веганские и безглютеновые варианты. Полный список всегда есть в нашей витрине.</p>
-      </div>
-    </details>
-
-    <!-- Вопрос 2 -->
-    <details class="accordion__item">
-      <summary class="accordion__question">Можно ли забронировать столик?</summary>
-      <div class="accordion__answer">
-        <p>Да, конечно! Вы можете забронировать столик по телефону <a href="tel:+74951234567">+7 (495) 123-45-67</a> или через наш Telegram-бот <a href="https://t.me/hotcookies_bot" target="_blank">@hotcookies_bot</a>.</p>
-      </div>
-    </details>
-
-    <!-- Вопрос 3 -->
-    <details class="accordion__item">
-      <summary class="accordion__question">Есть ли у вас доставка?</summary>
-      <div class="accordion__answer">
-        <p>Да, мы доставляем заказы по Москве в пределах МКАД. Минимальная сумма заказа для доставки — 500 рублей. Стоимость и время доставки зависят от вашего района. Также вы можете забрать заказ самостоятельно из нашей пекарни.</p>
-      </div>
-    </details>
-
-    <!-- Вопрос 4 -->
-    <details class="accordion__item">
-      <summary class="accordion__question">Готовите ли вы торты и печенье на заказ?</summary>
-      <div class="accordion__answer">
-        <p>Да, мы специализируемся на приготовлении десертов на заказ! Для этого просим вас предварительно (желательно за 2-3 дня) связаться с нашим менеджером по телефону или через соцсети, чтобы обсудить все детали и оформление.</p>
-      </div>
-    </details>
-
-    <!-- Добавьте еще вопросов по аналогии -->
-  </div>
+        <!-- Секция портфолио -->
+<section id="portfolio" class="mb-5">
+    <h2 class="text-center mb-4">Портфолио</h2>
+    
+    <!-- Карусель Bootstrap -->
+    <div id="portfolioCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <!-- Индикаторы -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- Слайды -->
+        <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+                <img src="img/first.jpg" class="d-block w-100" alt="Наши работы 1" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Печенье "Шоколадная фантазия"</h5>
+                    <p>Свежеиспеченное с шоколадной крошкой</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/second.jpg" class="d-block w-100" alt="Наши работы 2" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Праздничный набор</h5>
+                    <p>Идеально для особых occasions</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/third.jpg" class="d-block w-100" alt="Наши работы 3" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Фирменное ассорти</h5>
+                    <p>Разнообразие вкусов на любой выбор</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Кнопки управления -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+    
+    <!-- Видео (остается без изменений) -->
+    <div class="row">
+        <div class="col-12">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://rutube.ru/play/embed/0415474bae606bcde479446d795711c8/" allow="clipboard-write; autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </section>
-    </main> 
-    <!-- Подвал сайта --> 
-    <footer> 
-        <p>&copy; 2025 HotCookies. Все права защищены.</p> 
-        <p>Телефон: +7 (960) 552-22-20</p> 
-    </footer> 
-</body> 
+
+        <!-- Секция контактов -->
+        <section id="contacts" class="mb-5">
+            <h2 class="text-center mb-4">
+                <a href="contacts.html" class="text-decoration-none">Контактная информация</a>
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Наши контакты</h3>
+                            <p><i class="bi bi-geo-alt-fill me-2"></i> Адрес: Москва, ул. Пироговая, 13</p>
+                            <p><i class="bi bi-telephone-fill me-2"></i> Телефон: +7 (495) 123-45-67</p>
+                            <p><i class="bi bi-clock-fill me-2"></i> Часы работы: Пн-Чт 09:00-23:00, Пт-Сб 09:00-01:00, Вс 10:00-22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A59a32384e6e821b7746ddfafd929f27f34d8c51eaeb32bb729b3c45daa202f28&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция FAQ -->
+        <section id="faq" class="mb-5">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            
+            <div class="accordion" id="faqAccordion">
+                <!-- Вопрос 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Какие у вас есть варианты печенья?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Мы готовим более 20 видов печенья! От классического шоколадного чипса и овсяного с изюмом до экзотического с клюквой и белым шоколадом, а также веганские и безглютеновые варианты. Полный список всегда есть в нашей витрине.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Можно ли забронировать столик?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, конечно! Вы можете забронировать столик по телефону <a href="tel:+74951234567">+7 (495) 123-45-67</a> или через наш Telegram-бот <a href="https://t.me/hotcookies_bot" target="_blank">@hotcookies_bot</a>.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Есть ли у вас доставка?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, мы доставляем заказы по Москве в пределах МКАД. Минимальная сумма заказа для доставки — 500 рублей. Стоимость и время доставки зависят от вашего района. Также вы можете забрать заказ самостоятельно из нашей пекарни.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Готовите ли вы торты и печенье на заказ?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, мы специализируемся на приготовлении десертов на заказ! Для этого просим вас предварительно (желательно за 2-3 дня) связаться с нашим менеджером по телефону или через соцсети, чтобы обсудить все детали и оформление.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 HotCookies. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Телефон: +7 (960) 552-22-20</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно обратной связи -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Обратная связь</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="name" name="name" required minlength="2" autocomplete="given-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                            <div class="form-text">Формат: +7 (900) 000-00-00</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Дата</label>
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                        <div class="mb-3">
+                            <label for="topic" class="form-label">Тема</label>
+                            <select class="form-select" id="topic" name="topic" required>
+                                <option value="">Выберите тему</option>
+                                <option>Вопрос</option>
+                                <option>Заказ</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="submit" form="contactForm" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ваши кастомные скрипты (если нужны) -->
+    <script src="main.js"></script>
+</body>
 </html>
